@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.tvtoggler" name="TV toggler" version="0.1" provider-name="hyptrex">
+    <requires>
+        <import addon="xbmc.python" version="2.26.0"/>
+        <import addon="script.module.future" version="0.17.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Simple KODI TV toggler addon (hdmi cec)</summary>
+        <summary lang="ru_RU">Simple KODI TV toggler addon (hdmi cec)</summary>
+        <description lang="en_GB">Simple KODI TV toggler addon (hdmi cec)</description>
+        <description lang="ru_RU">Simple KODI TV toggler addon (hdmi cec)</description>
+        <language>ru</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <source>https://github.com/alexandr-mironov/script.tvtoggler</source>
+        <website>https://xbmc.com/</website>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
