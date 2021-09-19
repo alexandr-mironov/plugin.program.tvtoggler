@@ -1,4 +1,1 @@
-import xbmc
-
-# import resources.plugin  # noqa
-xbmc.executebuiltin('CECToggleState')
+import resources.control  # noqa
