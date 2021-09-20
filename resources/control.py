@@ -1,4 +1,4 @@
-import xbmc # noqa
+import xbmc  # noqa
 import xbmcgui
 
 
@@ -8,10 +8,15 @@ class TVControl(xbmcgui.Window):
         self.btnOn = xbmcgui.ControlButton(350, 500, 180, 80, "TV ON")
         self.setFocus(self.btnOff)
 
-    def onControl(self, control): # noqa
+    def onControl(self, control):  # noqa
         if control == self.btnOff:
             if xbmc.Player().isPlaying():
                 xbmc.executebuiltin("PlayerControl(Stop)")
             xbmc.executebuiltin('CECStandby')
         if control == self.btnOn:
             xbmc.executebuiltin('CECActivateSource')
+
+
+tv_control = TVControl()
+tv_control.doModal()
+del tv_control
