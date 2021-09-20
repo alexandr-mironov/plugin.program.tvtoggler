@@ -15,8 +15,3 @@ class TVControl(xbmcgui.Window):
             xbmc.executebuiltin('CECStandby')
         if control == self.btnOn:
             xbmc.executebuiltin('CECActivateSource')
-
-
-tv_control = TVControl()
-tv_control.doModal()
-del tv_control
