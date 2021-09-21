@@ -1,4 +1,4 @@
-from control import TVControl
+from resources.lib.control import TVControl
 
 tv_control = TVControl()
 tv_control.doModal()
