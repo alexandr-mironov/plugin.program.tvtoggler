@@ -1,6 +1,9 @@
 import xbmc  # noqa
 import xbmcgui
 
+ACTION_PREVIOUS_MENU = 10  # ESC
+ACTION_NAV_BACK = 92  # Backspace
+
 
 class TVControl(xbmcgui.Window):
     def __init__(self):
@@ -9,6 +12,10 @@ class TVControl(xbmcgui.Window):
         self.btnOn = xbmcgui.ControlButton(350, 500, 180, 80, "TV ON")
         self.addControl(self.btnOn)
         self.setFocus(self.btnOff)
+
+    def onAction(self, action):
+        if action == ACTION_NAV_BACK or action == ACTION_PREVIOUS_MENU:
+            self.close()
 
     def onControl(self, control):  # noqa
         if control == self.btnOff:
