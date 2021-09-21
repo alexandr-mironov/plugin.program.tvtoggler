@@ -24,3 +24,4 @@ class TVControl(xbmcgui.Window):
             xbmc.executebuiltin('CECStandby')
         if control == self.btnOn:
             xbmc.executebuiltin('CECActivateSource')
+        self.close()
