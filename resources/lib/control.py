@@ -5,7 +5,7 @@ ACTION_PREVIOUS_MENU = 10  # ESC
 ACTION_NAV_BACK = 92  # Backspace
 
 
-class TVControl(xbmcgui.Window):
+class TVControl(xbmcgui.WindowDialog):
     def __init__(self):
         self.btnOff = xbmcgui.ControlButton(350, 400, 180, 80, "TV OFF")
         self.addControl(self.btnOff)
