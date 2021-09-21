@@ -13,7 +13,7 @@ class TVControl(xbmcgui.Window):
         self.addControl(self.btnOn)
         self.setFocus(self.btnOff)
 
-    def onAction(self, action):
+    def onAction(self, action):  # noqa
         if action == ACTION_NAV_BACK or action == ACTION_PREVIOUS_MENU:
             self.close()
 
