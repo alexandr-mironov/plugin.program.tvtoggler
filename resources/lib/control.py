@@ -5,7 +5,9 @@ import xbmcgui
 class TVControl(xbmcgui.Window):
     def __init__(self):
         self.btnOff = xbmcgui.ControlButton(350, 400, 180, 80, "TV OFF")
+        self.addControl(self.btnOff)
         self.btnOn = xbmcgui.ControlButton(350, 500, 180, 80, "TV ON")
+        self.addControl(self.btnOn)
         self.setFocus(self.btnOff)
 
     def onControl(self, control):  # noqa
