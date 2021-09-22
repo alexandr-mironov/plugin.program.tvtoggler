@@ -12,6 +12,10 @@ class TVControl(xbmcgui.WindowDialog):
         self.btnOn = xbmcgui.ControlButton(350, 500, 180, 80, "TV ON")
         self.addControl(self.btnOn)
         self.setFocus(self.btnOff)
+        self.btnOff.controlDown(self.btnOn)
+        self.btnOn.controlUp(self.btnOff)
+        self.btnOff.controlLeft(self.btnOn)
+        self.btnOn.controlRight(self.btnOff)
 
     def onAction(self, action):  # noqa
         if action == ACTION_NAV_BACK or action == ACTION_PREVIOUS_MENU:
