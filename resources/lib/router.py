@@ -5,10 +5,10 @@ from urllib.parse import parse_qsl, urlencode, urlparse
 import re
 # import resources.lib.utils as utils
 
+
 class Session:
-    def __init__(self, handle, token, is_redirect=False):
+    def __init__(self, handle, is_redirect=False):
         self.handle = handle
-        self.token = token
         self.is_redirect = is_redirect
 
 
@@ -40,7 +40,7 @@ class Router:
         query_params = self._cast_types(parse_qsl(url.query), types)
         query_params.update(params)
 
-        self.session = Session(int(handle), token=self.api.get_token())
+        self.session = Session(int(handle))
         getattr(route['controller'], route['action'])(
             self,
             query_params
