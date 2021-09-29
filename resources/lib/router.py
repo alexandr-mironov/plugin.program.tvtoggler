@@ -48,9 +48,6 @@ class Router:
 
     def redirect(self, controller_name, action, **kwargs):
         route = self._route(controller_name, action)
-        token = kwargs.pop('token', None)
-        if token:
-            self.session.token = token
         self.session.is_redirect = True
         getattr(route['controller'], route['action'])(
             self,
