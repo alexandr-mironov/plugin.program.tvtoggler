@@ -9,8 +9,7 @@ from resources.lib.controllers import (
     actions
 )
 
-
-router = Router('plugin://script.tvtoggler')
+router = Router('plugin://plugin.program.tvtoggler')
 router.add('/', root, 'index')
 router.add('/off', actions, 'off')
 router.add('/on', actions, 'on')

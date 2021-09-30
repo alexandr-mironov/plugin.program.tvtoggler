@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.tvtoggler" name="TV toggler" version="0.1" provider-name="hyptrex">
+<addon id="plugin.program.tvtoggler" name="TV toggler" version="0.1" provider-name="hyptrex">
     <requires>
         <import addon="xbmc.python" version="2.26.0"/>
         <import addon="script.module.future" version="0.17.1"/>
