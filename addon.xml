@@ -5,13 +5,13 @@
         <import addon="script.module.future" version="0.17.1"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
+        <provides>program</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Simple KODI TV toggler addon (hdmi cec)</summary>
         <summary lang="ru_RU">Simple KODI TV toggler addon (hdmi cec)</summary>
-        <description lang="en_GB">Simple KODI TV toggler addon (hdmi cec)</description>
-        <description lang="ru_RU">Simple KODI TV toggler addon (hdmi cec)</description>
+        <description lang="en_GB">This addon provide ability to turn off/on your TV (in case your TV and kodi box has HDMI CEC). Most (all??) of Raspbeery Pi boards has HDMI CEC</description>
+        <description lang="ru_RU">This addon provide ability to turn off/on your TV (in case your TV and kodi box has HDMI CEC). Most (all??) of Raspbeery Pi boards has HDMI CEC</description>
         <language>ru</language>
         <platform>all</platform>
         <license>GPL-3.0</license>
