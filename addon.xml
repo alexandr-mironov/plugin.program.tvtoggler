@@ -15,7 +15,7 @@
         <language>ru</language>
         <platform>all</platform>
         <license>GPL-3.0</license>
-        <source>https://github.com/alexandr-mironov/script.tvtoggler</source>
+        <source>https://github.com/alexandr-mironov/plugin.program.tvtoggler</source>
         <website>https://xbmc.com/</website>
         <assets>
             <icon>resources/icon.png</icon>
