@@ -1,6 +1,6 @@
 from future import standard_library
 standard_library.install_aliases()  # noqa: E402
-import xbmc  # noqa
+import xbmc
 
 
 def on(router):

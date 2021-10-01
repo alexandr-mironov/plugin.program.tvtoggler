@@ -1,6 +1,7 @@
 from future import standard_library
 standard_library.install_aliases()  # noqa: E402
 import xbmcplugin
+import xbmcgui
 
 
 def index(router):
