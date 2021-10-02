@@ -4,7 +4,7 @@ import xbmcplugin
 import xbmcgui
 
 
-def index(router):
+def index(router, _params=None):
     handle = router.session.handle
 
     item_list = [
